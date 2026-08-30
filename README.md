@@ -23,26 +23,26 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Setup Dockem
-        uses: kerren/setup-dockem@v2
+        uses: kerren/setup-dockem@v3
 
       - name: Run Dockem
         run: dockem --version
 ```
 
-You are able to track a specific version or the latest within that major version number. For instance, you can use `v2.1.0` like so,
+You are able to track a specific version or the lastest within that major version number. For instance, you can use `v3.1.0` like so,
 
 ```yaml
       - name: Setup Dockem
-        uses: kerren/setup-dockem@v2.1.0
+        uses: kerren/setup-dockem@v3.1.0
 
       - name: Run Dockem
         run: dockem --version
 ```
 
-Or use the latest of version `2` like so,
+Or use the latest of version `3` like so,
 ```yaml
       - name: Setup Dockem
-        uses: kerren/setup-dockem@v2
+        uses: kerren/setup-dockem@v3
 
       - name: Run Dockem
         run: dockem --version
